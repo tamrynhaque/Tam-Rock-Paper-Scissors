@@ -16,15 +16,13 @@ class Game {
 
         for (int i = 1; i<(rounds+1); i++){
             System.out.println("Round "+i);
+
             human.makeMove();
             computer.makeMove();
 
-            Move humanMove = human.getCurrentMove();
-            Move computerMove = computer.getCurrentMove();
-
-            if (humanMove == computerMove){
+            if (human.getCurrentMove() == computer.getCurrentMove()){
                 System.out.println("Draw");
-            } else if (humanMove.beats(computerMove)){
+            } else if (human.getCurrentMove().beats(computer.getCurrentMove())){
                 System.out.println(human.getName()+" won this round...");
                 human.incrementScore();
             } else {
