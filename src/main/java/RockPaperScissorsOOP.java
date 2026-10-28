@@ -10,5 +10,4 @@ public class RockPaperScissorsOOP {
         game.playGame();
     }
 
-    //easter egg
 }
