@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 class Human extends Player{
 
     private String name;
